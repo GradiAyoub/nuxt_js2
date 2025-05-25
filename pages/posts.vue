@@ -15,7 +15,7 @@
   <script setup>
   // Load posts
   const { data: posts } = await useAsyncData('posts', () =>
-    queryContent('blog').sort({ date: -1 }).find()
+    queryContent('/blog').sort({ date: -1 }).find()
   )
   </script>
   
